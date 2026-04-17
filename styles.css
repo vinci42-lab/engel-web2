@@ -166,20 +166,21 @@ p {
   text-align: center;
 }
 
-/* LOGHI BILANCIATI */
+/* LOGHI */
 .logo {
-  height: 90px;   /* 🔥 dimensione giusta */
+  height: 90px;
   width: auto;
   object-fit: contain;
 }
 
-/* BLOCCA IL LOGO ENORME */
+/* ENGEL (più grande) */
 .logo.left {
-  max-width: 220px;   /* 🔥 fondamentale per ENGEL */
+  height: 100px;   /* 🔥 aumenta qui */
 }
 
+/* ZERNIKE (normale o leggermente più piccolo) */
 .logo.right {
-  max-width: 120px;
+  height: 90px;
 }
 
 /* ===== CONTENUTO ===== */
