@@ -1,0 +1,239 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.hero {
+  background: #0a2540;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.section.light {
+  background: #f5f7fa;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.steps div {
+  margin: 10px 0;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+}
+
+.accordion button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background: #eee;
+  text-align: left;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.panel {
+  display: none;
+  padding: 10px;
+  background: white;
+}
+
+.cta {
+  background: #0a2540;
+  color: white;
+  text-align: center;
+  padding: 60px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+}
+
+/* ===== MOBILE OPTIMIZATION ===== */
+
+h1 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* HERO MOBILE */
+.hero {
+  padding: 80px 20px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 15px auto;
+}
+
+/* BUTTON TOUCH */
+.btn {
+  padding: 14px 28px;
+  font-size: 1rem;
+}
+
+/* GRID MOBILE */
+.grid {
+  grid-template-columns: 1fr;
+}
+
+/* STEPS */
+.steps div {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* IMAGE */
+.image-section img {
+  height: auto;
+  object-fit: cover;
+}
+
+/* ACCORDION */
+.accordion button {
+  font-size: 1rem;
+  padding: 18px;
+}
+
+/* ===== HERO LAYOUT (LOGHI + TITOLO) ===== */
+.hero-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  gap: 40px;
+  padding: 60px 20px;
+}
+
+/* TESTO CENTRALE */
+.hero-text {
+  flex: 1;
+  text-align: center;
+}
+
+/* LOGHI BILANCIATI */
+.logo {
+  height: 90px;   /* 🔥 dimensione giusta */
+  width: auto;
+  object-fit: contain;
+}
+
+/* BLOCCA IL LOGO ENORME */
+.logo.left {
+  max-width: 220px;   /* 🔥 fondamentale per ENGEL */
+}
+
+.logo.right {
+  max-width: 120px;
+}
+
+/* ===== CONTENUTO ===== */
+.container {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* ===== CARD ===== */
+.card {
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== TABLET ===== */
+@media (min-width: 768px) {
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero {
+    padding: 100px 20px;
+  }
+
+}
+
+/* ===== DESKTOP ===== */
+@media (min-width: 1024px) {
+
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .hero h1 {
+    max-width: 800px;
+    margin: auto;
+  }
+
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .hero-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    height: 70px;
+    max-width: 180px;
+  }
+}

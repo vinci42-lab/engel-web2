@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENGEL - Digitalización Inteligente</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="hero">
+  <div class="hero-row">
+
+    <img src="immagini/engel.jpg" alt="ENGEL Logo" class="logo left">
+
+    <div class="hero-text">
+      <h1>ENGEL</h1>
+      <h2>Digitaliza tus procesos sin cambiar tu forma de trabajar</h2>
+      <p>ENGEL transforma cualquier documento en una herramienta digital inteligente, en tiempo real.</p>
+      <a href="#contacto" class="btn">Solicitar demo</a>
+    </div>
+
+    <img src="immagini/logo.png" alt="Zernike Logo" class="logo right">
+
+  </div>
+</header>
+
+<!-- BENEFICIOS -->
+<section class="section">
+  <div class="container">
+    <h2>Beneficios clave</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Sin papel</h3>
+        <p>Reduce costos y elimina procesos manuales.</p>
+      </div>
+      <div class="card">
+        <h3>Tiempo real</h3>
+        <p>Accede a la información de forma inmediata.</p>
+      </div>
+      <div class="card">
+        <h3>Automatización</h3>
+        <p>Alertas y recordatorios inteligentes.</p>
+      </div>
+      <div class="card">
+        <h3>Adaptable</h3>
+        <p>Se ajusta a cualquier empresa o institución.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="section light">
+  <div class="container">
+    <h2>Cómo funciona</h2>
+    <div class="steps">
+      <div>1. Digitalizas tus documentos</div>
+      <div>2. Tu equipo los completa</div>
+      <div>3. Los datos llegan en tiempo real</div>
+      <div>4. Tomas decisiones rápidas</div>
+    </div>
+  </div>
+</section>
+
+<!-- IMAGEN -->
+<section class="image-section">
+  <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="dashboard">
+</section>
+
+<!-- VERSATILIDAD -->
+<section class="section">
+  <div class="container">
+    <h2>Un software que se adapta a ti</h2>
+    <p>ENGEL evoluciona con tu empresa. Puedes modificar formularios en cualquier momento, sin desarrollos complejos.</p>
+  </div>
+</section>
+
+<!-- ACCORDION -->
+<section class="section light">
+  <div class="container">
+    <h2>Profundiza en ENGEL</h2>
+
+    <div class="accordion">
+
+  <button>Personalización</button>
+  <div class="panel">
+    <p>ENGEL es un software abierto diseñado para adaptarse completamente a las necesidades de cada empresa o institución.</p>
+    <p>Permite digitalizar cualquier documento o formulario existente, reproduciendo fielmente su estructura original, incluyendo logo corporativo, campos específicos y firmas digitales.</p>
+    <p>Esto permite mantener los procesos internos sin cambios, pero trasladándolos a un entorno digital más eficiente.</p>
+  </div>
+
+  <button>Versatilidad</button>
+  <div class="panel">
+    <p>ENGEL ofrece una flexibilidad total gracias a su estructura abierta.</p>
+    <p>Los formularios pueden modificarse en cualquier momento, añadiendo o eliminando campos según las necesidades operativas.</p>
+    <p>Las actualizaciones se realizan de forma rápida, permitiendo que el sistema evolucione junto con la empresa sin necesidad de desarrollos complejos.</p>
+  </div>
+
+  <button>Funciones incluidas</button>
+  <div class="panel">
+    <p>ENGEL no solo digitaliza documentos, sino que amplía sus funcionalidades.</p>
+    <p>Incluye gestión de formularios administrativos y técnicos, programación de mantenimientos periódicos y un sistema de alertas inteligentes.</p>
+    <p>Permite planificar visitas, reuniones, actividades en campo y controlar equipos, reduciendo errores y mejorando la organización.</p>
+  </div>
+
+  <button>Inmediatez</button>
+  <div class="panel">
+    <p>Cada vez que un operador completa un formulario, la información se registra automáticamente en la base de datos.</p>
+    <p>Los responsables pueden acceder a los datos en tiempo real desde cualquier dispositivo: ordenador, tablet o móvil.</p>
+    <p>Esto reduce significativamente los tiempos de análisis y permite una toma de decisiones más rápida y eficaz.</p>
+  </div>
+
+  <button>Ahorros y beneficios</button>
+  <div class="panel">
+    <p>ENGEL genera un ahorro directo en papel, tinta y gestión manual de documentos.</p>
+    <p>En muchos casos, estos ahorros compensan el coste de la licencia anual del software.</p>
+    <p>Además, reduce el impacto ambiental y mejora la eficiencia operativa, permitiendo actuar con mayor rapidez ante cualquier situación.</p>
+  </div>
+
+</div>
+
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta">
+  <div class="container">
+    <h2>Empieza a digitalizar tu empresa hoy</h2>
+    <a href="#contacto" class="btn">Solicitar demo</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 ENGEL Software</p>
+</footer>
+
+<script>
+const acc = document.querySelectorAll(".accordion button");
+
+acc.forEach(btn => {
+  btn.addEventListener("click", function() {
+    this.classList.toggle("active");
+    const panel = this.nextElementSibling;
+    panel.style.display = panel.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+
+</body>
+</html>
