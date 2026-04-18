@@ -238,3 +238,65 @@ p {
     max-width: 180px;
   }
 }
+
+/* ===== CARD BASE ===== */
+.card {
+  position: relative;
+  overflow: hidden;
+
+  background: transparent;   /* niente riquadro */
+  border: none;
+  box-shadow: none;
+
+  min-height: 220px;         /* 🔥 stabilizza tutto */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+}
+
+/* ===== TITOLO ===== */
+.card h3 {
+  margin: 0;
+  z-index: 1;
+  text-align: center;
+}
+
+/* ===== OVERLAY ===== */
+.card-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(15, 76, 129, 0.95);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: 20px;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  pointer-events: none; /* 🔥 evita sfarfallio */
+}
+
+/* ===== TESTO ===== */
+.card-overlay p {
+  font-size: 15px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* ===== HOVER ===== */
+.card:hover .card-overlay {
+  opacity: 1;
+}
+
+.card:hover h3 {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
