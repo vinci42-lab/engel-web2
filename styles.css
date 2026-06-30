@@ -270,25 +270,6 @@ body {
     box-shadow:0 30px 60px rgba(0,0,0,.25);
 }
 
-/* Responsive */
-
-@media(max-width:900px){
-
-.showcase{
-    flex-direction:column;
-    text-align:center;
-}
-
-.showcase-text h2{
-    font-size:32px;
-}
-
-.showcase-text p{
-    font-size:18px;
-}
-
-}
-
 /* ==========================
    FOOTER
 ========================== */
@@ -328,4 +309,37 @@ body {
 
 .hero-text p {
     font-size: 1.8rem;
+}
+
+/* --- RESPONSIVE / VERSIÓN MÓVIL --- */
+@media (max-width: 900px) {
+  
+  /* Ajusta el encabezado principal */
+  .hero-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px; /* Da espacio entre los logos y el texto */
+  }
+
+  /* Centra los logos en móvil */
+  .logo.left, .logo.right {
+    margin: 0 auto;
+    max-width: 150px; /* Evita que los logos se vean gigantes en teléfonos */
+  }
+
+  /* Reduce el tamaño de los títulos principales para que quepan en la pantalla */
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+  }
+
+  /* Convierte todas tus rejillas (grids) en una sola columna para móvil */
+  .grid-2, .grid-3, .grid-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio vertical entre tarjetas */
+  }
 }
