@@ -1,179 +1,238 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ENGEL - Digitalización Inteligente</title>
+  <meta name="description" content="Engel digitaliza auditorías, inspecciones y operaciones en campo con trazabilidad, evidencias, geolocalización y reportes en tiempo real.">
+  <meta name="theme-color" content="#071a3d">
+  <title>Engel | Control inteligente de operaciones en campo</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+  <a class="skip-link" href="#contenido">Ir al contenido</a>
 
-<header class="hero">
-  <div class="hero-row">
+  <header class="site-header" id="inicio">
+    <div class="nav-wrap">
+      <a class="brand" href="#inicio" aria-label="Engel, inicio">
+        <span class="brand-symbol" aria-hidden="true">
+          <img src="immagini/engel-logo-sidebar.png" alt="">
+        </span>
+        <span class="brand-wordmark">ENGEL</span>
+      </a>
 
-    <img src="immagini/engel.jpg" alt="ENGEL Logo" class="logo left">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Abrir menú</span>
+      </button>
 
-    <div class="hero-text">
-    <h1>ENGEL</h1>
-
-    <p>
-        <strong>Engel</strong> es una plataforma digital inteligente para la gestión,
-        supervisión y control de operaciones en campo, diseñada para optimizar procesos,
-        garantizar la trazabilidad y facilitar la toma de decisiones en tiempo real.
-    </p>
-
-    <p>
-        Más que una aplicación, <strong>Engel</strong> es una herramienta que transforma
-        la gestión operativa mediante digitalización, geolocalización, evidencia
-        fotográfica, firmas digitales y reportes en tiempo real.
-    </p>
-</div>
-
-    <img src="immagini/logo.png" alt="Zernike Logo" class="logo right">
-
-  </div>
-</header>
-
-<!-- COMO FUNCIONA -->
-<section class="section">
-  <h2>Cómo funciona ENGEL</h2>
-  <div class="grid-3">
-    <div class="card">
-      <img src="https://cdn-icons-png.flaticon.com/512/2920/2920349.png">
-      <h3>Registra tus activos</h3>
-      <p>Vehículos, equipos, instalaciones o cualquier recurso importante.</p>
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <a href="#solucion">Solución</a>
+        <a href="#modulos">Capacidades</a>
+        <a href="#sectores">Sectores</a>
+        <a href="#propuesta">Propuesta comercial</a>
+        <a class="nav-cta" href="#contacto">Solicitar diagnóstico</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="card">
-      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png">
-      <h3>Guarda cada actividad</h3>
-      <p>Mantenimientos, consumos, incidencias y documentos.</p>
+  <main id="contenido">
+    <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">OPERACIONES EN CAMPO · BAJO CONTROL</p>
+          <h1>Convierta cada operación en una decisión inteligente.</h1>
+          <p class="hero-lead">Engel conecta auditorías, inspecciones, evidencias y equipos en una sola plataforma. Más trazabilidad para la dirección. Menos fricción para quienes trabajan en campo.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contacto">Solicitar una demostración</a>
+            <a class="button button-ghost" href="#solucion">Descubrir Engel <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="trust-line" aria-label="Ventajas principales">
+            <span>Implementación acompañada</span>
+            <span>Adaptable a su operación</span>
+            <span>Información en tiempo real</span>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Resumen de valor">
+          <p class="panel-label">Una sola fuente de verdad</p>
+          <p class="panel-number">360°</p>
+          <p class="panel-text">Visibilidad de lo que ocurre, dónde ocurre y quién es responsable.</p>
+          <div class="panel-divider"></div>
+          <div class="mini-stat"><strong>Campo</strong><span>captura simple y guiada</span></div>
+          <div class="mini-stat"><strong>Oficina</strong><span>seguimiento centralizado</span></div>
+          <div class="mini-stat"><strong>Dirección</strong><span>indicadores accionables</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="product-stage" aria-labelledby="product-title">
+      <div class="container">
+        <div class="stage-heading">
+          <div>
+            <p class="eyebrow blue">LA OPERACIÓN COMPLETA, EN UNA VISTA</p>
+            <h2 id="product-title">Del dato en campo al reporte ejecutivo.</h2>
+          </div>
+          <p>Engel captura la información en el momento y lugar donde sucede, la organiza y la transforma en evidencia útil para actuar.</p>
+        </div>
+        <figure class="product-visual">
+          <img src="immagini/foto.png" alt="Vista general de Engel con panel de geolocalización, reporte de auditoría y aplicación móvil" width="1536" height="1024">
+          <figcaption>Plataforma web y móvil para auditorías, inspecciones y gestión operativa.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section problem" id="solucion">
+      <div class="container split-heading">
+        <div>
+          <p class="eyebrow blue">MENOS INCERTIDUMBRE. MÁS CONTROL.</p>
+          <h2>La operación no debería depender de papeles, chats y hojas dispersas.</h2>
+        </div>
+        <div class="section-intro">
+          <p>Cuando la información llega tarde o incompleta, se multiplican los reprocesos, los riesgos y las decisiones a ciegas.</p>
+          <p>Engel crea un flujo digital verificable desde la asignación de una actividad hasta su cierre.</p>
+        </div>
+      </div>
+
+      <div class="container outcomes">
+        <article class="outcome-card">
+          <span class="card-index">01</span>
+          <h3>Visibilidad inmediata</h3>
+          <p>Conozca el estado de cada actividad, responsable, ubicación e incidencia sin perseguir actualizaciones.</p>
+        </article>
+        <article class="outcome-card">
+          <span class="card-index">02</span>
+          <h3>Evidencia confiable</h3>
+          <p>Centralice fotografías, formularios, documentos y firmas digitales con un historial fácil de consultar.</p>
+        </article>
+        <article class="outcome-card">
+          <span class="card-index">03</span>
+          <h3>Procesos consistentes</h3>
+          <p>Estandarice listas de verificación y criterios para que cada equipo trabaje con el mismo nivel de calidad.</p>
+        </article>
+        <article class="outcome-card featured">
+          <span class="card-index">04</span>
+          <h3>Decisiones con contexto</h3>
+          <p>Detecte tendencias, prioridades y desviaciones antes de que se conviertan en costos mayores.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section capabilities" id="modulos">
+      <div class="container">
+        <div class="section-title centered">
+          <p class="eyebrow light">UNA PLATAFORMA, MÚLTIPLES CAPACIDADES</p>
+          <h2>Todo lo necesario para ejecutar, verificar y mejorar.</h2>
+          <p>Active las capacidades que su operación necesita y amplíe el alcance a medida que crece.</p>
+        </div>
+
+        <div class="capability-grid">
+          <article><span>01</span><h3>Auditorías e inspecciones</h3><p>Formularios y listas de verificación adaptados a sus procesos.</p></article>
+          <article><span>02</span><h3>Geolocalización</h3><p>Registro preciso de actividades y evidencias sobre el mapa.</p></article>
+          <article><span>03</span><h3>Evidencia digital</h3><p>Fotografías, documentos, observaciones y firmas en un solo expediente.</p></article>
+          <article><span>04</span><h3>Incidencias y alertas</h3><p>Hallazgos asignables con prioridad, responsable y seguimiento.</p></article>
+          <article><span>05</span><h3>Reportes ejecutivos</h3><p>Información organizada para demostrar cumplimiento y acelerar decisiones.</p></article>
+          <article><span>06</span><h3>Trabajo colaborativo</h3><p>Roles y responsabilidades claras para equipos de campo y oficina.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section workflow">
+      <div class="container workflow-grid">
+        <div class="workflow-copy">
+          <p class="eyebrow blue">UN FLUJO QUE TODOS ENTIENDEN</p>
+          <h2>De la planificación al cierre, sin perder el hilo.</h2>
+          <p>Engel reduce la distancia entre lo que sucede en campo y lo que la organización necesita saber.</p>
+          <a class="text-link" href="#contacto">Conversemos sobre su proceso <span aria-hidden="true">→</span></a>
+        </div>
+        <ol class="steps">
+          <li><span>01</span><div><h3>Planifique</h3><p>Defina actividades, formularios, prioridades y responsables.</p></div></li>
+          <li><span>02</span><div><h3>Ejecute</h3><p>Capture datos y evidencias desde el lugar de trabajo.</p></div></li>
+          <li><span>03</span><div><h3>Supervise</h3><p>Revise avances, incidencias y cumplimiento en tiempo real.</p></div></li>
+          <li><span>04</span><div><h3>Mejore</h3><p>Convierta el historial operativo en acciones y mejores prácticas.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section sectors" id="sectores">
+      <div class="container">
+        <div class="split-heading compact">
+          <div>
+            <p class="eyebrow blue">DISEÑADO PARA OPERACIONES REALES</p>
+            <h2>Una base flexible para distintos sectores.</h2>
+          </div>
+          <p>Engel se configura alrededor de su forma de operar, sus controles y sus indicadores.</p>
+        </div>
+
+        <div class="sector-list">
+          <article><p class="sector-number">01</p><div><h3>Industria y manufactura</h3><p>Inspecciones de planta, seguridad, calidad y mantenimiento.</p></div></article>
+          <article><p class="sector-number">02</p><div><h3>Transporte y logística</h3><p>Control de flota, rutas, entregas, incidentes y activos.</p></div></article>
+          <article><p class="sector-number">03</p><div><h3>Servicios técnicos</h3><p>Órdenes de trabajo, visitas, evidencias y aceptación del cliente.</p></div></article>
+          <article><p class="sector-number">04</p><div><h3>Infraestructura y construcción</h3><p>Avances, supervisión, hallazgos y cumplimiento en obra.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section offer" id="propuesta">
+      <div class="container offer-grid">
+        <div class="offer-copy">
+          <p class="eyebrow light">UNA PROPUESTA COMERCIAL SIN FRICCIÓN</p>
+          <h2>Empiece con un proceso crítico. Escale con resultados.</h2>
+          <p>No necesita transformar toda la empresa de una vez. Definimos un alcance inicial concreto, configuramos Engel con su equipo y medimos el valor antes de ampliar.</p>
+          <div class="offer-promise">
+            <span>Modelo escalable</span>
+            <span>Configuración a medida</span>
+            <span>Acompañamiento cercano</span>
+          </div>
+        </div>
+
+        <div class="offer-card">
+          <p class="offer-label">RUTA DE IMPLEMENTACIÓN</p>
+          <ol>
+            <li><span>1</span><div><strong>Diagnóstico operativo</strong><p>Identificamos el proceso, usuarios, datos e indicadores clave.</p></div></li>
+            <li><span>2</span><div><strong>Configuración y piloto</strong><p>Adaptamos flujos y formularios para validar el uso en campo.</p></div></li>
+            <li><span>3</span><div><strong>Despliegue acompañado</strong><p>Capacitamos al equipo y damos seguimiento a la adopción.</p></div></li>
+            <li><span>4</span><div><strong>Evolución continua</strong><p>Extendemos módulos, áreas o sedes según sus prioridades.</p></div></li>
+          </ol>
+          <a class="button button-primary full" href="#contacto">Recibir una propuesta a medida</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-cta" id="contacto">
+      <div class="container cta-grid">
+        <div>
+          <p class="eyebrow blue">HABLEMOS DE SU OPERACIÓN</p>
+          <h2>El primer paso es ver dónde Engel puede generar más impacto.</h2>
+          <p>Cuéntenos qué proceso necesita controlar. Prepararemos una demostración enfocada en su realidad operativa.</p>
+        </div>
+        <div class="contact-card">
+          <p class="contact-label">Zernike Panamá S.A.</p>
+          <a class="contact-main" href="mailto:d.marchetti@zernikeal.com?subject=Solicitud%20de%20demostración%20Engel">d.marchetti@zernikeal.com</a>
+          <a href="mailto:v.saffioti@zernikeal.com?subject=Solicitud%20de%20demostración%20Engel">v.saffioti@zernikeal.com</a>
+          <div class="contact-phones">
+            <a href="tel:+50766758529">+507 6675 8529</a>
+            <a href="tel:+50766761962">+507 6676 1962</a>
+          </div>
+          <a class="button button-dark full" href="https://wa.me/50766758529?text=Hola%2C%20quisiera%20conocer%20más%20sobre%20Engel" target="_blank" rel="noopener">Conversar por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <a class="brand footer-brand" href="#inicio" aria-label="Engel, volver al inicio">
+        <span class="brand-symbol" aria-hidden="true">
+          <img src="immagini/engel-logo-sidebar.png" alt="">
+        </span>
+        <span class="brand-wordmark">ENGEL</span>
+      </a>
+      <p>Auditorías, inspecciones y gestión en campo.</p>
+      <p>© <span id="year">2026</span> Zernike Panamá S.A.</p>
     </div>
+  </footer>
 
-    <div class="card">
-      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
-      <h3>Consulta el historial</h3>
-      <p>Accede a toda la información en segundos.</p>
-    </div>
-  </div>
-</section>
-
-<!-- IMAGEN CENTRAL -->
-<section class="section image-center">
-    <img src="immagini/foto.png" alt="Aplicación ENGEL" class="center-photo">
-</section>
-
-<!-- BENEFICIOS -->
-<section class="section alt">
-  <h2>Control real, sin complicaciones</h2>
-  <ul class="benefits">
-    <li>Encuentra cualquier información en segundos</li>
-    <li>Elimina el papel y el desorden</li>
-    <li>Evita errores y pérdida de datos</li>
-    <li>Controla todos tus activos en un solo sistema</li>
-    <li>Toma decisiones con información clara</li>
-  </ul>
-</section>
-
-<section class="section">
-  <h2>¿Para quién es ENGEL?</h2>
-
-  <div class="grid-4">
-
-    <div class="card">
-      <h3>Transporte</h3>
-      <p>Control total de flota, mantenimiento y costos.</p>
-    </div>
-
-    <div class="card">
-      <h3>Mantenimiento</h3>
-      <p>Historial completo de equipos e intervenciones.</p>
-    </div>
-
-    <div class="card">
-      <h3>Industria</h3>
-      <p>Control de maquinaria y mantenimiento preventivo.</p>
-    </div>
-
-    <div class="card">
-      <h3>Servicios</h3>
-      <p>Organiza toda tu operación diaria sin papel.</p>
-    </div>
-
-  </div>
-</section>
-
-<section class="section alt">
-  <h2>Del papel al control total</h2>
-
-  <div class="grid-2">
-
-    <div class="card compare">
-      <h3>Antes</h3>
-      <ul>
-        <li>Información en papel o archivos dispersos</li>
-        <li>Datos difíciles de encontrar</li>
-        <li>Errores y pérdida de información</li>
-        <li>Falta de control</li>
-      </ul>
-    </div>
-
-    <div class="card compare">
-      <h3>Con ENGEL</h3>
-      <ul>
-        <li>Todo en un solo sistema</li>
-        <li>Acceso inmediato</li>
-        <li>Historial completo y organizado</li>
-        <li>Control total de cada activo</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="section cta" id="contacto">
-  <h2>Empieza a organizar tu empresa hoy</h2>
-  <p>Solicita una demo y descubre cómo ENGEL puede transformar tu forma de trabajar.</p>
-  
-  <a href="#" class="btn">Solicitar demo</a>
-</section>
-<footer class="footer">
-
-    <div class="footer-container">
-
-        <h3>Contacto</h3>
-
-        <p>© 2026 <strong>Zernike Panamá S.A.</strong></p>
-
-        <p>
-            📍 Ed. Vitro Loft - Piso 26, Oficina C<br>
-            Calle Erick del Valle<br>
-            Panamá, República de Panamá
-        </p>
-
-        <p>
-            📞 +507 6675 8529
-        </p>
-        <p>
-            📞 +507 6676 1962
-        </p>
-
-        <p>
-            ✉ d.marchetti@zernikeal.com
-
-        </p>
-        <p>
-            ✉ v.saffioti@zernikeal.com
-
-        </p>
-
-    </div>
-
-</footer>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
