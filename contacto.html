@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Contacte al equipo ENGEL para solicitar una demostración aplicada a sus procesos.">
+  <title>Contacto | ENGEL</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="contact-page">
+  <header class="contact-header">
+    <nav class="nav shell" aria-label="Navegación principal">
+      <a class="brand" href="index.html" aria-label="Volver a ENGEL">
+        <span class="brand-symbol" aria-hidden="true"><img src="immagini/engel-logo-sidebar.png" alt=""></span>
+        <span class="brand-wordmark">ENGEL</span>
+      </a>
+      <a class="contact-back" href="index.html">← Volver al sitio</a>
+    </nav>
+  </header>
+
+  <main class="contact-main">
+    <div class="shell contact-layout">
+      <section class="contact-intro" aria-labelledby="contact-title">
+        <p class="eyebrow">HABLEMOS DE SU OPERACIÓN</p>
+        <h1 id="contact-title">Cuéntenos qué proceso necesita transformar.</h1>
+        <p>Comparta brevemente su necesidad. El equipo ENGEL revisará la información y se pondrá en contacto para preparar una demostración relevante para su organización.</p>
+        <div class="contact-details">
+          <div><span>Respuesta comercial</span><strong>En el siguiente día hábil</strong></div>
+          <div><span>Correo directo</span><a href="mailto:v.saffioti@zernikeal.com">v.saffioti@zernikeal.com</a></div>
+          <div><span>Teléfono</span><a href="tel:+50766761962">+507 6676 1962</a></div>
+        </div>
+      </section>
+
+      <section class="form-card" aria-label="Formulario de contacto">
+        <form id="contact-form" novalidate>
+          <div class="form-grid">
+            <label>Nombre y apellido<input name="nombre" type="text" autocomplete="name" maxlength="100" required></label>
+            <label>Empresa u organización<input name="empresa" type="text" autocomplete="organization" maxlength="120" required></label>
+            <label>Correo electrónico<input name="email" type="email" autocomplete="email" maxlength="160" required></label>
+            <label>Teléfono<input name="telefono" type="tel" autocomplete="tel" maxlength="40" required></label>
+            <label class="wide">Asunto<select name="asunto" required><option value="">Seleccione una opción</option><option>Solicitar una demostración</option><option>Digitalizar un proceso</option><option>Gestionar activos e instalaciones</option><option>Auditorías e inspecciones</option><option>Otra consulta</option></select></label>
+            <label class="wide">¿Cómo podemos ayudarle?<textarea name="mensaje" rows="6" maxlength="2000" required></textarea></label>
+          </div>
+          <label class="consent"><input name="consentimiento" type="checkbox" required><span>Acepto que Zernike Panamá S.A. utilice estos datos para responder a mi solicitud.</span></label>
+          <label class="website-field" aria-hidden="true">Sitio web<input name="website" type="text" tabindex="-1" autocomplete="off"></label>
+          <input name="startedAt" type="hidden" id="started-at">
+          <button class="button full submit-button" type="submit">Enviar solicitud</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="contact-footer"><div class="shell"><span>Zernike Panamá S.A. · Edificio Vitro Loft, Piso 26, Oficina C · Panamá</span></div></footer>
+  <script src="contacto.js"></script>
+</body>
+</html>
