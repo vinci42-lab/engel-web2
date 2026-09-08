@@ -17,9 +17,10 @@ form.addEventListener('submit', async (event) => {
 
   const button = form.querySelector('button[type="submit"]');
   const data = Object.fromEntries(new FormData(form).entries());
-  const endpoint = location.hostname.endsWith('github.io')
-    ? 'https://engel-propuesta-digital.vsaffio62.chatgpt.site/api/contacto'
-    : '/api/contacto';
+  const mailServiceHost = 'engel-propuesta-digital.vsaffio62.chatgpt.site';
+  const endpoint = location.hostname === mailServiceHost || location.hostname === 'localhost' || location.hostname === '127.0.0.1'
+    ? '/api/contacto'
+    : `https://${mailServiceHost}/api/contacto`;
 
   button.disabled = true;
   button.textContent = 'Enviando…';
